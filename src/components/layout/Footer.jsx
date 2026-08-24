@@ -56,6 +56,17 @@ export default function Footer() {
                 <Icon name="Facebook" className="w-4 h-4" />
                 <span>Facebook</span>
               </a>
+
+              <a
+                href={COMPANY.instagramUrl || "https://www.instagram.com/india_k07?igsi=N2NwMHJya25ydWdi"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#E1306C]/20 hover:bg-[#E1306C] text-xs sm:text-sm font-bold text-[#FF6584] hover:text-white border border-[#E1306C]/30 transition-all shadow-xs"
+                aria-label="Instagram Profile"
+              >
+                <Icon name="Instagram" className="w-4 h-4" />
+                <span>Instagram</span>
+              </a>
             </div>
           </div>
 
@@ -156,7 +167,7 @@ export default function Footer() {
         {/* Bottom Legal Bar */}
         <div className="pt-5 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-[13px] text-[#C4B5D4]">
           <p>© {new Date().getFullYear()} {COMPANY.name}. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4">
             <a 
               href={COMPANY.facebookUrl || "https://www.facebook.com/share/19RgZYQApG/"}
               target="_blank"
@@ -166,6 +177,17 @@ export default function Footer() {
             >
               <Icon name="Facebook" className="w-3.5 h-3.5 text-[#1877F2]" />
               <span>Facebook</span>
+            </a>
+            <span>•</span>
+            <a 
+              href={COMPANY.instagramUrl || "https://www.instagram.com/india_k07?igsi=N2NwMHJya25ydWdi"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#FF6584] transition-colors inline-flex items-center gap-1.5 text-white/90"
+              aria-label="Instagram Profile"
+            >
+              <Icon name="Instagram" className="w-3.5 h-3.5 text-[#E1306C]" />
+              <span>Instagram</span>
             </a>
             <span>•</span>
             <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>

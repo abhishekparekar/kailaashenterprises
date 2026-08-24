@@ -9,8 +9,10 @@ export const COMPANY = {
   website: "www.kailaashenterprises.net",
   websiteUrl: "https://www.kailaashenterprises.net",
   facebookUrl: "https://www.facebook.com/share/19RgZYQApG/",
+  instagramUrl: "https://www.instagram.com/india_k07?igsi=N2NwMHJya25ydWdi",
   social: {
-    facebook: "https://www.facebook.com/share/19RgZYQApG/"
+    facebook: "https://www.facebook.com/share/19RgZYQApG/",
+    instagram: "https://www.instagram.com/india_k07?igsi=N2NwMHJya25ydWdi"
   },
   tagline: "Quality Work. Lasting Impression.",
   subTagline: "Crafted with Precision. Built to Perfection.",

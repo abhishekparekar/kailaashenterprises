@@ -46,7 +46,7 @@ export default function GalleryPreview() {
               className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                 selectedCategory === cat.id
                   ? 'bg-[#32105F] text-white shadow-sm'
-                  : 'bg-white text-[#68636F] hover:text-[#32105F] border border-[#E8E2EE]'
+                  : 'bg-white text-[#16131B] hover:text-[#32105F] border border-[#E8E2EE]'
               }`}
             >
               {cat.name}

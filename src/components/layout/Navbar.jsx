@@ -149,7 +149,7 @@ export default function Navbar() {
         <div className="fixed inset-0 top-[52px] z-30 bg-black/40 backdrop-blur-xs lg:hidden animate-fade-in">
           <div className="bg-white w-full max-h-[85vh] overflow-y-auto border-b border-[#E8E2EE] shadow-xl p-5 space-y-4">
             <div className="space-y-1">
-              <div className="text-[10px] font-bold uppercase tracking-wider text-[#68636F] px-2 mb-1">
+              <div className="text-[10px] font-bold uppercase tracking-wider text-[#16131B] px-2 mb-1">
                 Navigation
               </div>
 
@@ -192,7 +192,7 @@ export default function Navbar() {
               </Button>
             </div>
 
-            <div className="p-3 rounded-xl bg-[#FAF8F3] border border-[#E8E2EE] text-[11px] text-[#68636F]">
+            <div className="p-3 rounded-xl bg-[#FAF8F3] border border-[#E8E2EE] text-[11px] text-[#16131B]">
               <span className="font-bold text-[#16131B] block mb-0.5">Pune Office:</span>
               {COMPANY.location.fullAddress}
             </div>

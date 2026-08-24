@@ -15,7 +15,7 @@ export default function NotFound() {
         <div className="space-y-2">
           <span className="text-sm font-extrabold uppercase tracking-widest text-[#D7A72E]">404 Error</span>
           <h1 className="text-3xl sm:text-5xl font-black text-[#16131B]">Page Not Found</h1>
-          <p className="text-sm sm:text-base text-[#68636F] max-w-md mx-auto">
+          <p className="text-sm sm:text-base text-[#16131B] font-medium max-w-md mx-auto">
             The page you are looking for might have been moved or doesn't exist. Let's get you back on track.
           </p>
         </div>

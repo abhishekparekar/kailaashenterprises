@@ -22,7 +22,7 @@ export default function TrustStrip() {
                 <h4 className="text-[11px] sm:text-xs font-extrabold text-[#16131B] truncate">
                   {item.title}
                 </h4>
-                <p className="text-[9px] sm:text-[10px] text-[#68636F] truncate">
+                <p className="text-[9px] sm:text-[10px] text-[#16131B] font-medium truncate">
                   {item.desc}
                 </p>
               </div>

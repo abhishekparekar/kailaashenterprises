@@ -70,7 +70,7 @@ export default function Services() {
                   className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                     selectedCat === cat.id
                       ? 'bg-[#32105F] text-white shadow-sm'
-                      : 'bg-[#FAF8F3] text-[#68636F] hover:text-[#32105F] border border-[#E8E2EE]'
+                      : 'bg-[#FAF8F3] text-[#16131B] hover:text-[#32105F] border border-[#E8E2EE]'
                   }`}
                 >
                   {cat.name}
@@ -85,9 +85,9 @@ export default function Services() {
                 placeholder="Search services (e.g. kitchen)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-9 pr-3.5 py-2 rounded-xl border border-[#E8E2EE] focus:border-[#32105F] focus:ring-2 focus:ring-[#32105F]/20 text-xs sm:text-sm outline-none bg-[#FAF8F3]"
+                className="w-full pl-9 pr-3.5 py-2 rounded-xl border border-[#E8E2EE] focus:border-[#32105F] focus:ring-2 focus:ring-[#32105F]/20 text-xs sm:text-sm outline-none bg-[#FAF8F3] text-[#16131B]"
               />
-              <Icon name="Search" className="w-4 h-4 text-[#68636F] absolute left-3 top-1/2 -translate-y-1/2" />
+              <Icon name="Search" className="w-4 h-4 text-[#16131B] absolute left-3 top-1/2 -translate-y-1/2" />
             </div>
 
           </div>
@@ -99,9 +99,9 @@ export default function Services() {
         <Container size="large">
           {filteredServices.length === 0 ? (
             <div className="text-center py-12 bg-white rounded-3xl border border-[#E8E2EE] p-6 max-w-md mx-auto">
-              <Icon name="SearchX" className="w-10 h-10 text-[#68636F] mx-auto mb-2" />
+              <Icon name="SearchX" className="w-10 h-10 text-[#16131B] mx-auto mb-2" />
               <h3 className="text-lg font-bold text-[#16131B]">No matching services found</h3>
-              <p className="text-xs text-[#68636F] mt-1">Try another search keyword or switch category filters.</p>
+              <p className="text-xs text-[#16131B] mt-1 font-medium">Try another search keyword or switch category filters.</p>
               <button
                 onClick={() => { setSelectedCat('all'); setSearchQuery(''); }}
                 className="mt-3 text-xs font-bold text-[#32105F] underline cursor-pointer"
@@ -143,7 +143,7 @@ export default function Services() {
                         </h3>
                       </div>
 
-                      <p className="text-xs sm:text-sm text-[#68636F] leading-relaxed mb-3">
+                      <p className="text-xs sm:text-sm text-[#16131B] leading-relaxed mb-3">
                         {service.shortDescription}
                       </p>
 
@@ -217,7 +217,7 @@ export default function Services() {
                   </button>
 
                   {isOpen && (
-                    <div className="px-4 pb-4 text-xs sm:text-sm text-[#68636F] leading-relaxed border-t border-[#E8E2EE]/60 pt-2.5">
+                    <div className="px-4 pb-4 text-xs sm:text-sm text-[#16131B] leading-relaxed border-t border-[#E8E2EE]/60 pt-2.5">
                       {faq.a}
                     </div>
                   )}

@@ -93,7 +93,7 @@ export default function ServiceDetails() {
                 <h2 className="text-xl sm:text-2xl font-extrabold text-[#16131B]">
                   Overview & Craftsmanship
                 </h2>
-                <p className="text-xs sm:text-sm md:text-base text-[#68636F] leading-relaxed">
+                <p className="text-xs sm:text-sm md:text-base text-[#16131B] leading-relaxed font-normal">
                   {service.longDescription}
                 </p>
               </div>

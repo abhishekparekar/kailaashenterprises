@@ -15,7 +15,7 @@ export default function Terms() {
             centered={false}
           />
 
-          <div className="space-y-4 text-sm sm:text-base text-[#68636F] leading-relaxed">
+          <div className="space-y-4 text-sm sm:text-base text-[#16131B] leading-relaxed">
             <h3 className="text-lg font-bold text-[#16131B]">1. Quotations and Project Estimates</h3>
             <p>
               All online estimations and verbal ballpark numbers are subject to formal on-site laser measurements and finalized material specifications. A formal quotation signed by {COMPANY.name} and the client constitutes the binding scope of work.

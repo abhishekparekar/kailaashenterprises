@@ -31,7 +31,7 @@ export default function ServicesPreview() {
               className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                 activeCategory === cat.id
                   ? 'bg-[#32105F] text-white shadow-sm'
-                  : 'bg-white text-[#68636F] hover:text-[#32105F] hover:bg-white/80 border border-[#E8E2EE]'
+                  : 'bg-white text-[#16131B] hover:text-[#32105F] hover:bg-white/80 border border-[#E8E2EE]'
               }`}
             >
               {cat.name}
@@ -73,7 +73,7 @@ export default function ServicesPreview() {
                     </h3>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-[#68636F] leading-relaxed mb-3">
+                  <p className="text-xs sm:text-sm text-[#16131B] leading-relaxed mb-3">
                     {service.shortDescription}
                   </p>
 

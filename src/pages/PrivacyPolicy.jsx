@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
             centered={false}
           />
 
-          <div className="space-y-4 text-sm sm:text-base text-[#68636F] leading-relaxed">
+          <div className="space-y-4 text-sm sm:text-base text-[#16131B] leading-relaxed">
             <h3 className="text-lg font-bold text-[#16131B]">1. Information We Collect</h3>
             <p>
               At {COMPANY.name}, we collect personal information you explicitly provide to us when requesting a quotation, booking a site visit, or contacting us via phone or WhatsApp. This includes your name, phone number, email address, physical address/locality in Pune, and project requirements.

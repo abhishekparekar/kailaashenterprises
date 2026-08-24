@@ -84,7 +84,7 @@ export default function Contact() {
                     <Icon name="Phone" className="w-6 h-6" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#68636F] block">
+                    <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#16131B] block">
                       Direct Phone Call
                     </span>
                     <a 
@@ -95,7 +95,7 @@ export default function Contact() {
                     </a>
                   </div>
                 </div>
-                <p className="text-xs sm:text-sm text-[#68636F] leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#16131B] leading-relaxed">
                   Call for urgent bookings, project discussions, or site visit scheduling. Operating Monday to Saturday, 9:00 AM to 8:00 PM.
                 </p>
               </div>
@@ -134,7 +134,7 @@ export default function Contact() {
                     </a>
                   </div>
                 </div>
-                <p className="text-xs sm:text-sm text-[#68636F] leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#16131B] leading-relaxed">
                   Send photos, floor plans, or requirements directly on WhatsApp. Our team responds promptly with estimates and advice.
                 </p>
               </div>
@@ -164,7 +164,7 @@ export default function Contact() {
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#16131B] tracking-tight">
                 Select Your Requirement
               </h2>
-              <p className="text-xs sm:text-sm text-[#68636F] mt-1">
+              <p className="text-xs sm:text-sm text-[#16131B] mt-1 font-medium">
                 Tap any category below to start a dedicated WhatsApp conversation with pre-configured project details.
               </p>
             </div>
@@ -191,7 +191,7 @@ export default function Contact() {
                     <h3 className="text-base font-extrabold text-[#16131B] group-hover:text-[#32105F] transition-colors mb-1.5">
                       {item.title}
                     </h3>
-                    <p className="text-xs text-[#68636F] leading-relaxed">
+                    <p className="text-xs text-[#16131B] leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -259,14 +259,14 @@ export default function Contact() {
                     <Icon name="User" className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#68636F] block">
+                    <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#16131B] block">
                       Founder & Director
                     </span>
                     <div className="text-base font-extrabold text-[#16131B]">
                       {COMPANY.founder}
                     </div>
                   </div>
-                  <p className="text-[11px] text-[#68636F]">
+                  <p className="text-[11px] text-[#16131B]">
                     Kailaash Enterprises Pune
                   </p>
                 </div>
@@ -277,7 +277,7 @@ export default function Contact() {
                     <Icon name="Mail" className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#68636F] block">
+                    <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#16131B] block">
                       Official Email
                     </span>
                     <a 
@@ -287,7 +287,7 @@ export default function Contact() {
                       {COMPANY.email}
                     </a>
                   </div>
-                  <p className="text-[11px] text-[#68636F]">
+                  <p className="text-[11px] text-[#16131B]">
                     For tenders & commercial RFPs
                   </p>
                 </div>
@@ -301,7 +301,7 @@ export default function Contact() {
               <div className="flex items-center justify-between mb-3 px-1">
                 <div>
                   <h3 className="text-base font-extrabold text-[#16131B]">Pune Service Location</h3>
-                  <p className="text-xs text-[#68636F]">Khardi / Kharadi, Pune — Serving all Pune areas</p>
+                  <p className="text-xs text-[#16131B]">Khardi / Kharadi, Pune — Serving all Pune areas</p>
                 </div>
                 <a
                   href={COMPANY.location.mapsUrl}
@@ -329,7 +329,7 @@ export default function Contact() {
                 ></iframe>
               </div>
 
-              <div className="pt-3 px-1 flex items-center justify-between text-xs text-[#68636F]">
+              <div className="pt-3 px-1 flex items-center justify-between text-xs text-[#16131B] font-medium">
                 <span>✓ On-site visits available across Pune</span>
                 <a
                   href={getSiteVisitUrl()}

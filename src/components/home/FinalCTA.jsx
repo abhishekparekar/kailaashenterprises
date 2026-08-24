@@ -28,7 +28,7 @@ export default function FinalCTA() {
               <span className="text-[#32105F]">Beautiful Together.</span>
             </h2>
 
-            <p className="text-xs sm:text-sm md:text-base text-[#68636F] leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base text-[#16131B] leading-relaxed font-medium">
               From custom modular interiors to commercial facility staffing in Pune, our expert team is ready to assist.
             </p>
           </div>
@@ -67,7 +67,7 @@ export default function FinalCTA() {
           </div>
 
           {/* Location Trust Line */}
-          <div className="pt-2 flex items-center justify-center gap-1.5 text-xs text-[#68636F]">
+          <div className="pt-2 flex items-center justify-center gap-1.5 text-xs text-[#16131B] font-semibold">
             <Icon name="MapPin" className="w-3.5 h-3.5 text-[#D7A72E]" />
             <span>Khandoba Building, Khardi, Pune — Serving All Localities</span>
           </div>

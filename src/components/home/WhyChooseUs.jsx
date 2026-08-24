@@ -59,7 +59,7 @@ export default function WhyChooseUs() {
                 {b.title}
               </h3>
 
-              <p className="text-xs sm:text-sm text-[#68636F] leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#16131B] leading-relaxed">
                 {b.desc}
               </p>
             </div>

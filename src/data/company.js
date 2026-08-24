@@ -12,6 +12,10 @@ export const COMPANY = {
   subTagline: "Crafted with Precision. Built to Perfection.",
   trustMessage: "Quality You Can Trust",
   philosophy: "Customer's Satisfaction Is Our Profit",
+  establishedYear: 2017,
+  establishedText: "Established in 2017",
+  story: "Kailash Enterprises began in 2017 and our single minded-promise is to ensure that we develop and strengthen relationships with clients and partners by delivering state-of-the-art services through our unique expertise. We have grown on a strong foundation of trust and values to rise as one of the leading Integrated Facility Management services across India. We cater to clients within a diverse range of sectors and offer our unique expertise to build and offer personalised and superior quality solutions. Kailash Enterprises takes pride in providing our clients with solutions that are executed with precision and care.",
+  promise: "To develop and strengthen relationships with clients and partners by delivering state-of-the-art services through our unique expertise.",
   location: {
     building: "Khandoba Building, 1st Floor",
     office: "Office No-12, Lane No-08",

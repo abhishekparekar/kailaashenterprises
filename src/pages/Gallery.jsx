@@ -57,7 +57,7 @@ export default function Gallery() {
                 className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                   activeCategory === cat.id
                     ? 'bg-[#32105F] text-white shadow-sm'
-                    : 'bg-[#FAF8F3] text-[#68636F] hover:text-[#32105F] border border-[#E8E2EE]'
+                    : 'bg-[#FAF8F3] text-[#16131B] hover:text-[#32105F] border border-[#E8E2EE]'
                 }`}
               >
                 {cat.name}
@@ -124,7 +124,7 @@ export default function Gallery() {
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#16131B]">
                 Have a specific design or floor plan in mind?
               </h3>
-              <p className="text-xs sm:text-sm text-[#68636F] max-w-lg mx-auto leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#16131B] max-w-lg mx-auto leading-relaxed font-medium">
                 Send us your layout, Pinterest reference, or blueprint on WhatsApp. We'll share material options and transparent estimates.
               </p>
             </div>

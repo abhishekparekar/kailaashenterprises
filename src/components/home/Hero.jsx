@@ -35,7 +35,7 @@ export default function Hero() {
                 </span>
               </h1>
               
-              <p className="text-[12px] sm:text-sm md:text-base text-[#68636F] leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium px-1 sm:px-0">
+              <p className="text-[12px] sm:text-sm md:text-base text-[#16131B] leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium px-1 sm:px-0">
                 Custom carpentry, modular kitchens, designer wardrobes, residential painting, and corporate support staffing in Pune.
               </p>
             </div>
@@ -76,7 +76,7 @@ export default function Hero() {
             </div>
 
             {/* Micro Trust Indicators */}
-            <div className="pt-0.5 sm:pt-1 flex flex-wrap items-center justify-center lg:justify-start gap-y-1.5 gap-x-3 sm:gap-x-5 text-[10.5px] sm:text-xs font-bold text-[#68636F]">
+            <div className="pt-0.5 sm:pt-1 flex flex-wrap items-center justify-center lg:justify-start gap-y-1.5 gap-x-3 sm:gap-x-5 text-[10.5px] sm:text-xs font-bold text-[#16131B]">
               <span className="inline-flex items-center gap-1 sm:gap-1.5">
                 <Icon name="CheckCircle2" className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#D7A72E]" />
                 Free Site Visit

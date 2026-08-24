@@ -36,7 +36,7 @@ export default function Process() {
                   {step.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-[#68636F] leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#16131B] leading-relaxed">
                   {step.desc}
                 </p>
               </div>
@@ -52,7 +52,7 @@ export default function Process() {
         <div className="mt-10 p-5 sm:p-7 rounded-3xl bg-[#FAF8F3] border border-[#E8E2EE] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <div>
             <h4 className="text-base sm:text-lg font-extrabold text-[#16131B]">Ready to start Phase 01?</h4>
-            <p className="text-xs sm:text-sm text-[#68636F] mt-0.5">Book your free site visit in Pune. No obligations, zero consultation fees.</p>
+            <p className="text-xs sm:text-sm text-[#16131B] mt-0.5 font-medium">Book your free site visit in Pune. No obligations, zero consultation fees.</p>
           </div>
           <Button
             href={getSiteVisitUrl("General Interior / Project")}

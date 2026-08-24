@@ -8,6 +8,10 @@ export const COMPANY = {
   email: "info@kailaashenterprises.net",
   website: "www.kailaashenterprises.net",
   websiteUrl: "https://www.kailaashenterprises.net",
+  facebookUrl: "https://www.facebook.com/share/19RgZYQApG/",
+  social: {
+    facebook: "https://www.facebook.com/share/19RgZYQApG/"
+  },
   tagline: "Quality Work. Lasting Impression.",
   subTagline: "Crafted with Precision. Built to Perfection.",
   trustMessage: "Quality You Can Trust",

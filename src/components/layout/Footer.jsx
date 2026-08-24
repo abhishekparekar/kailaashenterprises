@@ -45,6 +45,17 @@ export default function Footer() {
                 <Icon name="MessageSquare" className="w-4 h-4" />
                 <span>WhatsApp Chat</span>
               </a>
+
+              <a
+                href={COMPANY.facebookUrl || "https://www.facebook.com/share/19RgZYQApG/"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#1877F2]/20 hover:bg-[#1877F2] text-xs sm:text-sm font-bold text-[#62A2FF] hover:text-white border border-[#1877F2]/30 transition-all shadow-xs"
+                aria-label="Facebook Page"
+              >
+                <Icon name="Facebook" className="w-4 h-4" />
+                <span>Facebook</span>
+              </a>
             </div>
           </div>
 
@@ -146,6 +157,17 @@ export default function Footer() {
         <div className="pt-5 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-[13px] text-[#C4B5D4]">
           <p>© {new Date().getFullYear()} {COMPANY.name}. All rights reserved.</p>
           <div className="flex items-center gap-4">
+            <a 
+              href={COMPANY.facebookUrl || "https://www.facebook.com/share/19RgZYQApG/"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#62A2FF] transition-colors inline-flex items-center gap-1.5 text-white/90"
+              aria-label="Facebook Page"
+            >
+              <Icon name="Facebook" className="w-3.5 h-3.5 text-[#1877F2]" />
+              <span>Facebook</span>
+            </a>
+            <span>•</span>
             <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <span>•</span>
             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

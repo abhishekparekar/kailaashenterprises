@@ -8,7 +8,7 @@ import Logo from '../common/Logo';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#170A2C] text-white pt-8 pb-20 md:pt-12 md:pb-10 border-t border-[#32105F] relative overflow-hidden">
+    <footer className="bg-[#170A2C] text-white pt-8 pb-28 md:pt-12 md:pb-10 border-t border-[#32105F] relative overflow-hidden">
       {/* Subtle ambient glow */}
       <div className="absolute top-0 right-1/4 w-72 h-72 bg-[#32105F]/40 rounded-full blur-3xl pointer-events-none -z-0"></div>
       
@@ -30,9 +30,9 @@ export default function Footer() {
             <div className="flex flex-wrap items-center gap-2.5 pt-1">
               <a
                 href={`tel:${COMPANY.phoneRaw}`}
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-[#D7A72E] hover:text-[#170A2C] text-xs sm:text-sm font-bold text-white border border-white/15 transition-all shadow-xs"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-[#D7A72E] hover:text-[#170A2C] text-xs sm:text-sm font-bold text-white border border-white/15 transition-all duration-200 shadow-xs group"
               >
-                <Icon name="Phone" className="w-4 h-4 text-[#D7A72E] group-hover:text-[#170A2C]" />
+                <Icon name="Phone" className="w-4 h-4 text-[#D7A72E] group-hover:text-[#170A2C] transition-colors" />
                 <span>{COMPANY.phoneDisplay}</span>
               </a>
 
@@ -40,32 +40,19 @@ export default function Footer() {
                 href={getWhatsAppUrl("Hello Kailaash Enterprises, I would like to enquire about your services in Pune.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#25D366]/20 hover:bg-[#25D366] text-xs sm:text-sm font-bold text-[#25D366] hover:text-white border border-[#25D366]/30 transition-all shadow-xs"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#25D366]/20 hover:bg-[#25D366] text-xs sm:text-sm font-bold text-[#25D366] hover:text-white border border-[#25D366]/30 transition-all duration-200 shadow-xs group"
               >
                 <Icon name="MessageSquare" className="w-4 h-4" />
                 <span>WhatsApp Chat</span>
               </a>
 
               <a
-                href={COMPANY.facebookUrl || "https://www.facebook.com/share/19RgZYQApG/"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#1877F2]/20 hover:bg-[#1877F2] text-xs sm:text-sm font-bold text-[#62A2FF] hover:text-white border border-[#1877F2]/30 transition-all shadow-xs"
-                aria-label="Facebook Page"
+                href={`mailto:${COMPANY.email}`}
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white hover:text-[#170A2C] text-xs sm:text-sm font-bold text-white border border-white/15 transition-all duration-200 shadow-xs group"
+                aria-label={`Send Email to ${COMPANY.email}`}
               >
-                <Icon name="Facebook" className="w-4 h-4" />
-                <span>Facebook</span>
-              </a>
-
-              <a
-                href={COMPANY.instagramUrl || "https://www.instagram.com/india_k07?igsi=N2NwMHJya25ydWdi"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#E1306C]/20 hover:bg-[#E1306C] text-xs sm:text-sm font-bold text-[#FF6584] hover:text-white border border-[#E1306C]/30 transition-all shadow-xs"
-                aria-label="Instagram Profile"
-              >
-                <Icon name="Instagram" className="w-4 h-4" />
-                <span>Instagram</span>
+                <Icon name="Mail" className="w-4 h-4 text-[#D7A72E] group-hover:text-[#170A2C] transition-colors" />
+                <span>{COMPANY.email}</span>
               </a>
             </div>
           </div>
@@ -93,7 +80,7 @@ export default function Footer() {
                   <Link to="/services/painting-services" className="hover:text-white hover:underline transition-colors">Painting & Finishes</Link>
                 </li>
                 <li>
-                  <Link to="/services/corporate-facility-support" className="hover:text-white hover:underline transition-colors">Corporate Staffing</Link>
+                  <Link to="/services/corporate-staffing-support" className="hover:text-white hover:underline transition-colors">Corporate Staffing</Link>
                 </li>
                 <li>
                   <Link to="/services" className="text-[#D7A72E] font-bold inline-block hover:underline pt-1">
@@ -165,34 +152,58 @@ export default function Footer() {
         </div>
 
         {/* Bottom Legal Bar */}
-        <div className="pt-5 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-[13px] text-[#C4B5D4]">
+        <div className="pt-5 border-t border-white/10 flex flex-col xl:flex-row items-center justify-between gap-4 text-xs sm:text-[13px] text-[#C4B5D4]">
           <p>© {new Date().getFullYear()} {COMPANY.name}. All rights reserved.</p>
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
+            <span className="text-white/60 text-xs hidden lg:inline">Connect & Follow:</span>
+            
+            {/* Facebook Link */}
             <a 
               href={COMPANY.facebookUrl || "https://www.facebook.com/share/19RgZYQApG/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#62A2FF] transition-colors inline-flex items-center gap-1.5 text-white/90"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 hover:bg-[#1877F2]/20 text-white/90 hover:text-white border border-white/10 hover:border-[#1877F2]/40 transition-all text-xs group"
               aria-label="Facebook Page"
             >
-              <Icon name="Facebook" className="w-3.5 h-3.5 text-[#1877F2]" />
+              <Icon name="Facebook" className="w-3.5 h-3.5 text-[#1877F2] group-hover:scale-110 transition-transform" />
               <span>Facebook</span>
             </a>
-            <span>•</span>
+            
+            {/* Instagram Link */}
             <a 
               href={COMPANY.instagramUrl || "https://www.instagram.com/india_k07?igsi=N2NwMHJya25ydWdi"}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#FF6584] transition-colors inline-flex items-center gap-1.5 text-white/90"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 hover:bg-[#E1306C]/20 text-white/90 hover:text-white border border-white/10 hover:border-[#E1306C]/40 transition-all text-xs group"
               aria-label="Instagram Profile"
             >
-              <Icon name="Instagram" className="w-3.5 h-3.5 text-[#E1306C]" />
+              <Icon name="Instagram" className="w-3.5 h-3.5 text-[#FF6584] group-hover:scale-110 transition-transform" />
               <span>Instagram</span>
             </a>
-            <span>•</span>
-            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <span>•</span>
-            <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+
+            {/* YouTube Link (None / Placeholder) */}
+            <a 
+              href={COMPANY.youtubeUrl && COMPANY.youtubeUrl !== '#' ? COMPANY.youtubeUrl : undefined}
+              className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs group ${
+                COMPANY.youtubeUrl && COMPANY.youtubeUrl !== '#' 
+                  ? 'bg-white/5 hover:bg-[#FF0000]/20 text-white/90 hover:text-white border-white/10 hover:border-[#FF0000]/40 transition-all cursor-pointer' 
+                  : 'bg-white/5 text-white/60 border-white/10 cursor-default'
+              }`}
+              aria-label="YouTube Channel"
+            >
+              <Icon name="Youtube" className="w-3.5 h-3.5 text-[#FF0000]" />
+              <span>YouTube {(!COMPANY.youtubeUrl || COMPANY.youtubeUrl === '#') && '(none)'}</span>
+            </a>
+
+            {/* Email Link */}
+            <a 
+              href={`mailto:${COMPANY.email}`}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 hover:bg-[#D7A72E]/20 text-white/90 hover:text-[#D7A72E] border border-white/10 hover:border-[#D7A72E]/40 transition-all text-xs group"
+              aria-label={`Send email to ${COMPANY.email}`}
+            >
+              <Icon name="Mail" className="w-3.5 h-3.5 text-[#D7A72E] group-hover:scale-110 transition-transform" />
+              <span className="truncate max-w-[190px]">{COMPANY.email}</span>
+            </a>
           </div>
         </div>
 

@@ -20,7 +20,7 @@ export default function Hero() {
             {/* Top Micro Badge */}
             <div className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-white border border-[#E8E2EE] shadow-2xs text-[10px] xs:text-[11px] sm:text-xs font-extrabold text-[#32105F] mx-auto lg:mx-0">
               <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#D7A72E] animate-pulse"></span>
-              <span>Pune's Trusted Craftsmanship & Facility Partner</span>
+              <span>Pune's Trusted Craftsmanship & Services Partner</span>
             </div>
 
             {/* Main Headline */}

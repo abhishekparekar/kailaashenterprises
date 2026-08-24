@@ -46,7 +46,7 @@ export default function FeaturedServices() {
         "Licensed Electricians & Master Plumbers for technical maintenance",
         "Police-verified Janitors, Housekeeping & Pantry Boys"
       ],
-      link: "/services/corporate-facility-support",
+      link: "/services/corporate-staffing-support",
       serviceName: "Corporate Support Staffing",
       reversed: false,
     }

@@ -294,6 +294,49 @@ export default function Contact() {
 
               </div>
 
+              {/* Social Channels on Contact Page */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-white border border-[#E8E2EE] shadow-xs space-y-3">
+                <div className="flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-[#32105F]">
+                  <Icon name="Share2" className="w-4 h-4 text-[#D7A72E]" />
+                  <span>Connect With Us on Social Media</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <a
+                    href={COMPANY.facebookUrl || "https://www.facebook.com/share/19RgZYQApG/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 rounded-xl bg-[#1877F2]/10 hover:bg-[#1877F2] text-[#1877F2] hover:text-white border border-[#1877F2]/20 transition-all duration-200 group"
+                    aria-label="Facebook Page"
+                  >
+                    <div className="w-8 h-8 rounded-lg bg-[#1877F2] text-white flex items-center justify-center shrink-0 shadow-sm">
+                      <Icon name="Facebook" className="w-4 h-4" />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-xs font-bold leading-tight">Facebook Page</div>
+                      <div className="text-[11px] opacity-80 truncate">Official Updates</div>
+                    </div>
+                    <Icon name="ExternalLink" className="w-3.5 h-3.5 ml-auto opacity-70 group-hover:opacity-100" />
+                  </a>
+
+                  <a
+                    href={COMPANY.instagramUrl || "https://www.instagram.com/india_k07?igsi=N2NwMHJya25ydWdi"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 rounded-xl bg-[#E1306C]/10 hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] text-[#E1306C] hover:text-white border border-[#E1306C]/20 transition-all duration-200 group"
+                    aria-label="Instagram Profile"
+                  >
+                    <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center shrink-0 shadow-sm">
+                      <Icon name="Instagram" className="w-4 h-4" />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-xs font-bold leading-tight">Instagram Profile</div>
+                      <div className="text-[11px] opacity-80 truncate">@india_k07</div>
+                    </div>
+                    <Icon name="ExternalLink" className="w-3.5 h-3.5 ml-auto opacity-70 group-hover:opacity-100" />
+                  </a>
+                </div>
+              </div>
+
             </div>
 
             {/* Right Column: Google Maps Location Frame */}
@@ -318,7 +361,7 @@ export default function Contact() {
               <div className="w-full h-72 sm:h-80 rounded-2xl overflow-hidden border border-[#E8E2EE] bg-gray-100 relative">
                 <iframe
                   title="Kailaash Enterprises Pune Location"
-                  src="https://maps.google.com/maps?q=Khardi,Pune,Maharashtra,India&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                  src={COMPANY.location.embedUrl || "https://maps.google.com/maps?q=18.5499042,73.9232168&z=17&ie=UTF8&iwloc=&output=embed"}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

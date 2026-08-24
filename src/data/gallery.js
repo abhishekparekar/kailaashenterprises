@@ -5,7 +5,7 @@ export const GALLERY_CATEGORIES = [
   { id: "furniture", name: "TV Units & Furniture" },
   { id: "carpentry", name: "Custom Woodwork" },
   { id: "painting", name: "Painting" },
-  { id: "commercial", name: "Commercial & Facility" },
+  { id: "commercial", name: "Commercial & Corporate" },
 ];
 
 export const GALLERY_ITEMS = [
@@ -56,12 +56,12 @@ export const GALLERY_ITEMS = [
   },
   {
     id: 6,
-    title: "Corporate Office Facility Maintenance & Support",
+    title: "Corporate Office Staffing & Maintenance Support",
     category: "commercial",
-    categoryLabel: "Commercial & Facility",
+    categoryLabel: "Commercial & Corporate",
     location: "EON IT Park, Kharadi, Pune",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
-    description: "Dedicated facility staff deployment, pantry assistance, and commercial janitorial management."
+    description: "Dedicated corporate support staff deployment, pantry assistance, and commercial housekeeping management."
   },
   {
     id: 7,
@@ -103,7 +103,7 @@ export const GALLERY_ITEMS = [
     id: 11,
     title: "Industrial Upholstery & Carpet Deep Shampooing",
     category: "commercial",
-    categoryLabel: "Commercial & Facility",
+    categoryLabel: "Commercial & Corporate",
     location: "Hinjewadi Phase 1, Pune",
     image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80",
     description: "Mechanized deep carpet extraction and sanitization for 12,000 sq.ft co-working workspace."

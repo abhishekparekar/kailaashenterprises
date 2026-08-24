@@ -12,8 +12,6 @@ import Services from './pages/Services';
 import ServiceDetails from './pages/ServiceDetails';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import Terms from './pages/Terms';
 
 export default function App() {
   return (
@@ -32,8 +30,6 @@ export default function App() {
             <Route path="/services/:slug" element={<ServiceDetails />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms" element={<Terms />} />
             
             {/* When page not found, by default redirect to home page */}
             <Route path="*" element={<Navigate to="/" replace />} />

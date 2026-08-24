@@ -2,7 +2,7 @@ export const SERVICE_CATEGORIES = [
   { id: "all", name: "All Services" },
   { id: "carpentry", name: "Carpentry & Interiors" },
   { id: "painting", name: "Painting" },
-  { id: "facility", name: "Corporate Support Staff" },
+  { id: "staffing", name: "Corporate Support Staff" },
   { id: "technical", name: "AC & Technical" },
 ];
 
@@ -219,10 +219,10 @@ export const SERVICES = [
 
   // --- CATEGORY C: CORPORATE SUPPORT STAFF ---
   {
-    id: "corporate-facility-support",
-    slug: "corporate-facility-support",
+    id: "corporate-staffing-support",
+    slug: "corporate-staffing-support",
     title: "Corporate Support Staffing",
-    category: "facility",
+    category: "staffing",
     categoryName: "Corporate Support Staff",
     tagline: "Corporate Support Staff Provide – Accountant, Data Entry Operators, Electrician, Plumbers, Janitors, Pantry Boys.",
     shortDescription: "Corporate Support Staff Provide – Accountant, Data Entry Operators, Electrician, Plumbers, Janitors, Pantry Boys.",

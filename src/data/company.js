@@ -10,9 +10,11 @@ export const COMPANY = {
   websiteUrl: "https://www.kailaashenterprises.net",
   facebookUrl: "https://www.facebook.com/share/19RgZYQApG/",
   instagramUrl: "https://www.instagram.com/india_k07?igsi=N2NwMHJya25ydWdi",
+  youtubeUrl: "#",
   social: {
     facebook: "https://www.facebook.com/share/19RgZYQApG/",
-    instagram: "https://www.instagram.com/india_k07?igsi=N2NwMHJya25ydWdi"
+    instagram: "https://www.instagram.com/india_k07?igsi=N2NwMHJya25ydWdi",
+    youtube: "#"
   },
   tagline: "Quality Work. Lasting Impression.",
   subTagline: "Crafted with Precision. Built to Perfection.",
@@ -20,7 +22,7 @@ export const COMPANY = {
   philosophy: "Customer's Satisfaction Is Our Profit",
   establishedYear: 2017,
   establishedText: "Established in 2017",
-  story: "Kailash Enterprises began in 2017 and our single minded-promise is to ensure that we develop and strengthen relationships with clients and partners by delivering state-of-the-art services through our unique expertise. We have grown on a strong foundation of trust and values to rise as one of the leading Integrated Facility Management services across India. We cater to clients within a diverse range of sectors and offer our unique expertise to build and offer personalised and superior quality solutions. Kailash Enterprises takes pride in providing our clients with solutions that are executed with precision and care.",
+  story: "Kailash Enterprises began in 2017 and our single minded-promise is to ensure that we develop and strengthen relationships with clients and partners by delivering state-of-the-art services through our unique expertise. We have grown on a strong foundation of trust and values to rise as one of the leading corporate support staffing and turnkey interior execution services across India. We cater to clients within a diverse range of sectors and offer our unique expertise to build and offer personalised and superior quality solutions. Kailash Enterprises takes pride in providing our clients with solutions that are executed with precision and care.",
   promise: "To develop and strengthen relationships with clients and partners by delivering state-of-the-art services through our unique expertise.",
   location: {
     building: "Khandoba Building, 1st Floor",
@@ -31,7 +33,12 @@ export const COMPANY = {
     state: "Maharashtra",
     country: "India",
     fullAddress: "Khandoba Building, 1st Floor, Office No-12, Lane No-08, Khardi, Pune-411 014, Maharashtra, India",
-    mapsUrl: "https://maps.google.com/?q=Khardi+Pune+411014"
+    coordinates: {
+      lat: 18.5499042,
+      lng: 73.9232168
+    },
+    mapsUrl: "https://www.google.com/maps/place//@18.5499042,73.9232168,17z/data=!3m1!4b1!4m3!3m2!1s0x3bc2c106dbf3848f:0xac6268d088148a46!12e1?entry=ttu",
+    embedUrl: "https://maps.google.com/maps?q=18.5499042,73.9232168&z=17&ie=UTF8&iwloc=&output=embed"
   },
   operatingHours: {
     days: "Monday - Saturday",

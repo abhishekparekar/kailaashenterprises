@@ -40,7 +40,7 @@ export default function AboutPreview() {
           <div className="lg:col-span-7 space-y-4 sm:space-y-5">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#32105F]/5 text-[#32105F] text-xs font-extrabold uppercase tracking-wider border border-[#32105F]/10">
               <span className="w-1.5 h-1.5 rounded-full bg-[#D7A72E]"></span>
-              Established 2017 • Integrated Facility & Interior Solutions
+              Established 2017 • Commercial & Interior Solutions
             </div>
 
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#16131B] tracking-tight leading-tight">
@@ -49,7 +49,7 @@ export default function AboutPreview() {
             </h2>
 
             <p className="text-xs sm:text-sm md:text-base text-[#16131B] leading-relaxed">
-              Founded in 2017, Kailash Enterprises has grown on a solid foundation of trust and values into a premier provider of <strong>Integrated Facility Management</strong>, custom interior woodwork, painting, and technical support across diverse commercial and residential sectors.
+              Founded in 2017, Kailash Enterprises has grown on a solid foundation of trust and values into a premier provider of <strong>Corporate Support Staffing</strong>, custom interior woodwork, painting, and technical support across diverse commercial and residential sectors.
             </p>
 
             <p className="text-xs sm:text-sm md:text-base text-[#16131B] leading-relaxed">
@@ -71,7 +71,7 @@ export default function AboutPreview() {
                   <Icon name="Layers" className="w-4 h-4" />
                 </div>
                 <div className="text-xs sm:text-sm font-extrabold text-[#16131B]">One-Stop Hub</div>
-                <div className="text-[11px] text-[#16131B] font-medium mt-0.5">Interiors, painting, & facility support.</div>
+                <div className="text-[11px] text-[#16131B] font-medium mt-0.5">Interiors, painting, & corporate staffing.</div>
               </div>
 
               <div className="p-3.5 rounded-2xl bg-white border border-[#E8E2EE]">

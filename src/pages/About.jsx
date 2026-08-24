@@ -48,10 +48,10 @@ export default function About() {
                   <strong>Kailash Enterprises began in 2017</strong> and our single-minded promise is to ensure that we develop and strengthen relationships with clients and partners by delivering state-of-the-art services through our unique expertise.
                 </p>
                 <p>
-                  We have grown on a strong foundation of trust and values to rise as one of the leading <strong>Integrated Facility Management</strong> and turnkey interior execution services across India. We cater to clients within a diverse range of sectors and offer our unique expertise to build and provide personalized and superior quality solutions.
+                  We have grown on a strong foundation of trust and values to rise as one of the leading <strong>Corporate Support Staffing</strong> and turnkey interior execution services across India. We cater to clients within a diverse range of sectors and offer our unique expertise to build and provide personalized and superior quality solutions.
                 </p>
                 <p>
-                  Kailash Enterprises takes pride in providing our clients with solutions that are executed with <strong>precision and care</strong> — whether it is specialized corporate support staffing, master carpentry and custom interior fabrication, or comprehensive facility maintenance.
+                  Kailash Enterprises takes pride in providing our clients with solutions that are executed with <strong>precision and care</strong> — whether it is specialized corporate support staffing, master carpentry and custom interior fabrication, or comprehensive maintenance.
                 </p>
               </div>
 
@@ -154,11 +154,11 @@ export default function About() {
                     </span>
                   </div>
 
-                  {/* Tile 4: Facility Staffing */}
+                  {/* Tile 4: Corporate Staffing */}
                   <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group shadow-xs">
                     <img
                       src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80"
-                      alt="Corporate Facility Support"
+                      alt="Corporate Support Staffing"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
@@ -217,7 +217,7 @@ export default function About() {
               </div>
               <h3 className="text-base font-extrabold text-[#16131B] mb-1.5">Diverse Sectors</h3>
               <p className="text-xs sm:text-sm text-[#16131B] leading-relaxed">
-                Integrated facility management and interior solutions serving corporate, retail, IT, and residential clients.
+                Corporate support staffing and turnkey interior solutions serving corporate, retail, IT, and residential clients.
               </p>
             </div>
 

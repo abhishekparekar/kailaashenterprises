@@ -29,7 +29,7 @@ export default function FinalCTA() {
             </h2>
 
             <p className="text-xs sm:text-sm md:text-base text-[#16131B] leading-relaxed font-medium">
-              From custom modular interiors to commercial facility staffing in Pune, our expert team is ready to assist.
+              From custom modular interiors to corporate support staffing in Pune, our expert team is ready to assist.
             </p>
           </div>
 

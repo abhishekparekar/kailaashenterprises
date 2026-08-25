@@ -5,7 +5,7 @@ export const COMPANY = {
   phone: "+91 8805996742",
   phoneRaw: "+918805996742",
   phoneDisplay: "+91 88059 96742",
-  email: "info@kailaashenterprises.net",
+  email: "kailaashenterprises77@gmail.com",
   website: "www.kailaashenterprises.net",
   websiteUrl: "https://www.kailaashenterprises.net",
   facebookUrl: "https://www.facebook.com/share/19RgZYQApG/",

@@ -60,7 +60,14 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-4 text-[11px]">
-            <span className="text-[#D7A72E] font-semibold tracking-wider hidden lg:inline">
+            <a 
+              href={`mailto:${COMPANY.email}`}
+              className="inline-flex items-center gap-1.5 text-[#C4B5D4] hover:text-[#D7A72E] transition-colors hidden xl:inline-flex"
+            >
+              <Icon name="Mail" className="w-3 h-3 text-[#D7A72E]" />
+              {COMPANY.email}
+            </a>
+            <span className="text-[#D7A72E] font-semibold tracking-wider hidden lg:inline xl:hidden">
               {COMPANY.tagline}
             </span>
             <a 

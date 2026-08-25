@@ -11,12 +11,12 @@ export default function Footer() {
     <footer className="bg-[#170A2C] text-white pt-8 pb-28 md:pt-12 md:pb-10 border-t border-[#32105F] relative overflow-hidden">
       {/* Subtle ambient glow */}
       <div className="absolute top-0 right-1/4 w-72 h-72 bg-[#32105F]/40 rounded-full blur-3xl pointer-events-none -z-0"></div>
-      
+
       <Container size="large" className="relative z-10 space-y-8">
-        
+
         {/* Main Footer Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-10">
-          
+
           {/* Column 1: Brand & Business Overview (Span 5 on Desktop) */}
           <div className="lg:col-span-5 space-y-3.5">
             <Logo theme="dark" size="lg" />
@@ -50,7 +50,7 @@ export default function Footer() {
 
           {/* Column 2 & 3: Side-by-Side 2-Columns on Mobile / iOS / iPad (Span 4 on Desktop) */}
           <div className="lg:col-span-4 grid grid-cols-2 gap-5 sm:gap-6 pt-3 lg:pt-0 border-t lg:border-t-0 border-white/10">
-            
+
             {/* Left: Services List */}
             <div className="space-y-2.5">
               <h4 className="text-xs sm:text-[13px] font-black uppercase tracking-wider text-[#D7A72E] flex items-center gap-1.5 pb-1.5 border-b border-white/10">
@@ -101,9 +101,9 @@ export default function Footer() {
                   <Link to="/contact" className="hover:text-white hover:underline transition-colors">Contact Us</Link>
                 </li>
                 <li>
-                  <a 
-                    href={getSiteVisitUrl()} 
-                    target="_blank" 
+                  <a
+                    href={getSiteVisitUrl()}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#D7A72E] font-bold inline-block hover:underline pt-1"
                   >
@@ -162,55 +162,60 @@ export default function Footer() {
             </span>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
-            <span className="text-white/60 text-xs hidden lg:inline">Connect & Follow:</span>
-            
+          {/* Compact Social & Contact Pills */}
+          <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
+            <span className="text-white/60 text-xs hidden xl:inline mr-1">Connect & Follow:</span>
+
             {/* Facebook Link */}
-            <a 
+            <a
               href={COMPANY.facebookUrl || "https://www.facebook.com/share/19RgZYQApG/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 hover:bg-[#1877F2]/20 text-white/90 hover:text-white border border-white/10 hover:border-[#1877F2]/40 transition-all text-xs group"
+              className="inline-flex items-center gap-1 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md sm:rounded-lg bg-white/5 hover:bg-[#1877F2]/20 text-white/90 hover:text-white border border-white/10 hover:border-[#1877F2]/40 transition-all text-[11px] sm:text-xs group shrink-0"
               aria-label="Facebook Page"
             >
-              <Icon name="Facebook" className="w-3.5 h-3.5 text-[#1877F2] group-hover:scale-110 transition-transform" />
+              <Icon name="Facebook" className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#1877F2] group-hover:scale-110 transition-transform" />
               <span>Facebook</span>
             </a>
-            
+
             {/* Instagram Link */}
-            <a 
+            <a
               href={COMPANY.instagramUrl || "https://www.instagram.com/india_k07?igsi=N2NwMHJya25ydWdi"}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 hover:bg-[#E1306C]/20 text-white/90 hover:text-white border border-white/10 hover:border-[#E1306C]/40 transition-all text-xs group"
+              className="inline-flex items-center gap-1 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md sm:rounded-lg bg-white/5 hover:bg-[#E1306C]/20 text-white/90 hover:text-white border border-white/10 hover:border-[#E1306C]/40 transition-all text-[11px] sm:text-xs group shrink-0"
               aria-label="Instagram Profile"
             >
-              <Icon name="Instagram" className="w-3.5 h-3.5 text-[#FF6584] group-hover:scale-110 transition-transform" />
+              <Icon name="Instagram" className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#FF6584] group-hover:scale-110 transition-transform" />
               <span>Instagram</span>
             </a>
 
-            {/* YouTube Link (None / Placeholder) */}
-            <a 
+            {/* YouTube Link */}
+            <a
               href={COMPANY.youtubeUrl && COMPANY.youtubeUrl !== '#' ? COMPANY.youtubeUrl : undefined}
-              className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs group ${
-                COMPANY.youtubeUrl && COMPANY.youtubeUrl !== '#' 
-                  ? 'bg-white/5 hover:bg-[#FF0000]/20 text-white/90 hover:text-white border-white/10 hover:border-[#FF0000]/40 transition-all cursor-pointer' 
+              target={COMPANY.youtubeUrl && COMPANY.youtubeUrl !== '#' ? "_blank" : undefined}
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-1 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md sm:rounded-lg border text-[11px] sm:text-xs group shrink-0 ${
+                COMPANY.youtubeUrl && COMPANY.youtubeUrl !== '#'
+                  ? 'bg-white/5 hover:bg-[#FF0000]/20 text-white/90 hover:text-white border-white/10 hover:border-[#FF0000]/40 transition-all cursor-pointer'
                   : 'bg-white/5 text-white/60 border-white/10 cursor-default'
               }`}
               aria-label="YouTube Channel"
             >
-              <Icon name="Youtube" className="w-3.5 h-3.5 text-[#FF0000]" />
-              <span>YouTube {(!COMPANY.youtubeUrl || COMPANY.youtubeUrl === '#') && '(none)'}</span>
+              <Icon name="Youtube" className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#FF0000]" />
+              <span>YouTube</span>
             </a>
 
             {/* Email Link */}
-            <a 
+            <a
               href={`mailto:${COMPANY.email}`}
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 hover:bg-[#D7A72E]/20 text-white/90 hover:text-[#D7A72E] border border-white/10 hover:border-[#D7A72E]/40 transition-all text-xs group"
+              className="inline-flex items-center gap-1 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md sm:rounded-lg bg-white/5 hover:bg-[#D7A72E]/20 text-white/90 hover:text-[#D7A72E] border border-white/10 hover:border-[#D7A72E]/40 transition-all text-[11px] sm:text-xs group shrink-0"
               aria-label={`Send email to ${COMPANY.email}`}
+              title={COMPANY.email}
             >
-              <Icon name="Mail" className="w-3.5 h-3.5 text-[#D7A72E] group-hover:scale-110 transition-transform" />
-              <span className="truncate max-w-[190px]">{COMPANY.email}</span>
+              <Icon name="Mail" className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#D7A72E] group-hover:scale-110 transition-transform" />
+              <span className="hidden md:inline truncate max-w-[190px]">{COMPANY.email}</span>
+              <span className="md:hidden">Email</span>
             </a>
           </div>
         </div>

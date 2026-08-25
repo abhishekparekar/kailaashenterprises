@@ -151,9 +151,26 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Legal Bar */}
+        {/* Bottom Legal & Attribution Bar */}
         <div className="pt-5 border-t border-white/10 flex flex-col xl:flex-row items-center justify-between gap-4 text-xs sm:text-[13px] text-[#C4B5D4]">
-          <p>© {new Date().getFullYear()} {COMPANY.name}. All rights reserved.</p>
+          <div className="flex flex-wrap items-center justify-center xl:justify-start gap-x-2 gap-y-1 text-center xl:text-left">
+            <span>© 2026 {COMPANY.name}</span>
+            <span className="text-white/30 hidden sm:inline">|</span>
+            <span className="inline-flex items-center gap-1.5 text-white/90">
+              Designed &amp; Developed by
+              <a
+                href="https://www.icoded.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#D7A72E] hover:text-white transition-colors underline decoration-[#D7A72E]/40 hover:decoration-white underline-offset-4 inline-flex items-center gap-1 group"
+                title="iCoded Automation Pvt. Ltd. - www.icoded.in"
+              >
+                <span>iCoded Automation Pvt. Ltd.</span>
+                <Icon name="ExternalLink" className="w-3 h-3 text-[#D7A72E] group-hover:text-white transition-colors opacity-85" />
+              </a>
+            </span>
+          </div>
+
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
             <span className="text-white/60 text-xs hidden lg:inline">Connect & Follow:</span>
             

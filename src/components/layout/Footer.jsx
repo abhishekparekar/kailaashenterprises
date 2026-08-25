@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { COMPANY } from '../../data/company';
-import { getWhatsAppUrl, getSiteVisitUrl } from '../../utils/whatsapp';
+import { getSiteVisitUrl } from '../../utils/whatsapp';
 import Icon from '../common/Icon';
 import Container from '../common/Container';
 import Logo from '../common/Logo';
@@ -26,33 +26,24 @@ export default function Footer() {
               Kailaash Enterprises is committed to delivering quality products and reliable solutions with a strong focus on customer satisfaction. We believe in building long-term relationships through trust, quality, and professional service. With our dedication and expertise, we continue to serve our customers with excellence and consistency.
             </p>
 
-            {/* Quick Contact Badges */}
+            {/* Quick Contact Badges (Clean, Responsive on Mobile & Desktop) */}
             <div className="flex flex-wrap items-center gap-2.5 pt-1">
               <a
                 href={`tel:${COMPANY.phoneRaw}`}
                 className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-[#D7A72E] hover:text-[#170A2C] text-xs sm:text-sm font-bold text-white border border-white/15 transition-all duration-200 shadow-xs group"
+                aria-label={`Call ${COMPANY.phoneDisplay}`}
               >
-                <Icon name="Phone" className="w-4 h-4 text-[#D7A72E] group-hover:text-[#170A2C] transition-colors" />
+                <Icon name="Phone" className="w-4 h-4 text-[#D7A72E] group-hover:text-[#170A2C] transition-colors shrink-0" />
                 <span>{COMPANY.phoneDisplay}</span>
               </a>
 
               <a
-                href={getWhatsAppUrl("Hello Kailaash Enterprises, I would like to enquire about your services in Pune.")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#25D366]/20 hover:bg-[#25D366] text-xs sm:text-sm font-bold text-[#25D366] hover:text-white border border-[#25D366]/30 transition-all duration-200 shadow-xs group"
-              >
-                <Icon name="MessageSquare" className="w-4 h-4" />
-                <span>WhatsApp Chat</span>
-              </a>
-
-              <a
                 href={`mailto:${COMPANY.email}`}
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white hover:text-[#170A2C] text-xs sm:text-sm font-bold text-white border border-white/15 transition-all duration-200 shadow-xs group"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white hover:text-[#170A2C] text-xs sm:text-sm font-bold text-white border border-white/15 transition-all duration-200 shadow-xs group max-w-full truncate"
                 aria-label={`Send Email to ${COMPANY.email}`}
               >
-                <Icon name="Mail" className="w-4 h-4 text-[#D7A72E] group-hover:text-[#170A2C] transition-colors" />
-                <span>{COMPANY.email}</span>
+                <Icon name="Mail" className="w-4 h-4 text-[#D7A72E] group-hover:text-[#170A2C] transition-colors shrink-0" />
+                <span className="truncate">{COMPANY.email}</span>
               </a>
             </div>
           </div>

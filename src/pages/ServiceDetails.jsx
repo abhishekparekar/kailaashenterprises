@@ -12,9 +12,68 @@ export default function ServiceDetails() {
   const { slug } = useParams();
   const service = SERVICES.find((s) => s.slug === slug);
 
+  const allPlacementFields = [
+    'IT',
+    'IT Engineer',
+    'Mechanical engineer',
+    'BPO & Call Centre',
+    'Finance/Accounting',
+    'Banking',
+    'Sales/Marketing',
+    'Civil Engineer',
+    'Electrical Engineer',
+    'Hotel',
+    'FMCG',
+    'Pharmacist',
+    'Aviation',
+    'Real Estate',
+    'Shipping',
+    'Technician',
+    'Instrumentation engineer',
+    'Doctor/Nurse',
+    'Insurance',
+    'Architect / Interior Designer',
+    'Beautician',
+    'IT trainer',
+    'Investment',
+    'Admin/back office staff',
+    'HR'
+  ];
+
+  const initialSelected = [
+    'IT',
+    'IT Engineer',
+    'Mechanical engineer',
+    'Finance/Accounting',
+    'Banking',
+    'Civil Engineer',
+    'Electrical Engineer',
+    'Admin/back office staff',
+    'HR'
+  ];
+
+  const [selectedPlacementRoles, setSelectedPlacementRoles] = React.useState(initialSelected);
+
   if (!service) {
     return <Navigate to="/services" replace />;
   }
+
+  const toggleRole = (roleName) => {
+    setSelectedPlacementRoles(prev => 
+      prev.includes(roleName)
+        ? prev.filter(r => r !== roleName)
+        : [...prev, roleName]
+    );
+  };
+
+  const getPlacementWhatsAppUrl = () => {
+    const rolesText = selectedPlacementRoles.length > 0 
+      ? selectedPlacementRoles.join(', ') 
+      : 'Corporate Placement & Staffing';
+    return `https://wa.me/${COMPANY.phoneRaw.replace(/\D/g, '')}?text=${encodeURIComponent(
+      `Hello Kailaash Enterprises, I am inquiring about Corporate Placement & Staffing for: *${rolesText}*. Please share available candidate profiles, hiring models, and terms.`
+    )}`;
+  };
 
   const relatedServices = SERVICES.filter(
     (s) => s.category === service.category && s.slug !== service.slug
@@ -90,17 +149,86 @@ export default function ServiceDetails() {
 
               {/* Service Detailed Overview */}
               <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#E8E2EE] space-y-3">
-                <h2 className="text-xl sm:text-2xl font-extrabold text-[#16131B]">
+                <h2 className="text-xl sm:text-2xl font-black text-black">
                   Overview & Craftsmanship
                 </h2>
-                <p className="text-xs sm:text-sm md:text-base text-[#16131B] leading-relaxed font-normal">
+                <p className="text-xs sm:text-sm md:text-base text-black font-medium leading-relaxed">
                   {service.longDescription}
                 </p>
               </div>
 
+              {/* Dedicated Placement Consultancy for Corporates Card (When placementFields exist) */}
+              {service.placementFields && (
+                <div className="bg-white rounded-3xl border-2 border-[#D7A72E]/50 overflow-hidden shadow-sm">
+                  {/* Card Header matching screenshot style */}
+                  <div className="p-5 sm:p-6 border-b border-[#E8E2EE] bg-[#FAF8F3]/70 flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6 rounded-md bg-[#E07A1E] text-white flex items-center justify-center font-bold text-sm shadow-2xs">
+                        ✓
+                      </div>
+                      <h2 className="text-lg sm:text-xl font-black text-black tracking-tight">
+                        Placement consultancy for Corporates
+                      </h2>
+                    </div>
+                    <span className="text-xs font-bold text-[#E07A1E] bg-[#E07A1E]/10 px-2.5 py-1 rounded-full border border-[#E07A1E]/30 hidden sm:inline-block">
+                      Verified Verticals
+                    </span>
+                  </div>
+
+                  <div className="p-5 sm:p-6 space-y-4">
+                    <div className="space-y-1">
+                      <p className="text-sm font-bold text-black">
+                        For which of these fields do you offer services?
+                      </p>
+                      <p className="text-xs text-black/80 font-medium">
+                        Click any vertical to select/deselect, or inquire directly on WhatsApp for qualified corporate talent.
+                      </p>
+                    </div>
+
+                    {/* Tags / Pills matching screenshot */}
+                    <div className="flex flex-wrap gap-2.5 pt-1">
+                      {allPlacementFields.map((field) => {
+                        const isSelected = selectedPlacementRoles.includes(field);
+                        return (
+                          <button
+                            key={field}
+                            type="button"
+                            onClick={() => toggleRole(field)}
+                            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold border transition-all duration-150 cursor-pointer flex items-center gap-1.5 ${
+                              isSelected
+                                ? 'bg-[#FFF8EE] border-[#E07A1E] text-[#B85705] shadow-xs ring-1 ring-[#E07A1E]/30'
+                                : 'bg-white border-[#E8E2EE] text-black hover:border-[#32105F] hover:text-[#32105F]'
+                            }`}
+                          >
+                            {isSelected && <span className="text-[#E07A1E] font-black text-sm">✓</span>}
+                            <span>{field}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    {/* Bottom Action Strip within card */}
+                    <div className="pt-4 mt-2 border-t border-[#E8E2EE] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                      <div className="text-xs text-black font-medium">
+                        <span className="font-black text-[#32105F]">{selectedPlacementRoles.length} fields selected</span> for workforce deployment in Pune & India.
+                      </div>
+                      <a
+                        href={getPlacementWhatsAppUrl()}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow-sm transition-all hover:scale-[1.02] cursor-pointer"
+                      >
+                        <Icon name="MessageSquare" className="w-4 h-4" />
+                        <span>Enquire on WhatsApp ({selectedPlacementRoles.length})</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {/* Key Features & Specifications */}
               <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#E8E2EE] space-y-4">
-                <h3 className="text-lg sm:text-xl font-extrabold text-[#16131B] flex items-center gap-2">
+                <h3 className="text-lg sm:text-xl font-black text-black flex items-center gap-2">
                   <Icon name="CheckCircle" className="w-5 h-5 text-[#32105F]" />
                   Key Highlights & Specifications
                 </h3>
@@ -110,7 +238,7 @@ export default function ServiceDetails() {
                       <div className="w-4.5 h-4.5 rounded-full bg-[#D7A72E]/20 text-[#32105F] flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
                         ✓
                       </div>
-                      <span className="text-xs sm:text-sm font-semibold text-[#16131B] leading-snug">{feat}</span>
+                      <span className="text-xs sm:text-sm font-bold text-black leading-snug">{feat}</span>
                     </div>
                   ))}
                 </div>
@@ -118,7 +246,7 @@ export default function ServiceDetails() {
 
               {/* What's Included (Scope of Work) */}
               <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#E8E2EE] space-y-4">
-                <h3 className="text-lg sm:text-xl font-extrabold text-[#16131B] flex items-center gap-2">
+                <h3 className="text-lg sm:text-xl font-black text-black flex items-center gap-2">
                   <Icon name="PackageCheck" className="w-5 h-5 text-[#32105F]" />
                   What's Included in This Service
                 </h3>
@@ -126,7 +254,7 @@ export default function ServiceDetails() {
                   {service.inclusions.map((inc, idx) => (
                     <div key={idx} className="flex items-center gap-2.5 p-3 rounded-xl bg-[#FAF8F3]">
                       <Icon name="Check" className="w-4 h-4 text-[#25D366] shrink-0" />
-                      <span className="text-xs sm:text-sm font-medium text-[#16131B]">{inc}</span>
+                      <span className="text-xs sm:text-sm font-semibold text-black">{inc}</span>
                     </div>
                   ))}
                 </div>

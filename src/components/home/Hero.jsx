@@ -36,7 +36,7 @@ export default function Hero() {
               </h1>
               
               <p className="text-[12px] sm:text-sm md:text-base text-[#16131B] leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium px-1 sm:px-0">
-                Custom carpentry, modular kitchens, designer wardrobes, residential painting, and corporate support staffing in Pune.
+                Custom carpentry, modular kitchens, designer wardrobes, residential painting, corporate placement & staffing in Pune.
               </p>
             </div>
 
@@ -148,7 +148,7 @@ export default function Hero() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                   <span className="absolute bottom-1.5 left-2 sm:bottom-2 sm:left-2.5 text-[9.5px] xs:text-[10.5px] sm:text-xs md:text-sm font-black text-white drop-shadow-xs">
-                    Corporate Staffing
+                    Placement & Staffing
                   </span>
                 </div>
 

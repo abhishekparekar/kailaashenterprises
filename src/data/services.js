@@ -2,7 +2,7 @@ export const SERVICE_CATEGORIES = [
   { id: "all", name: "All Services" },
   { id: "carpentry", name: "Carpentry & Interiors" },
   { id: "painting", name: "Painting" },
-  { id: "staffing", name: "Corporate Support Staff" },
+  { id: "staffing", name: "Placement & Staffing" },
   { id: "technical", name: "AC & Technical" },
 ];
 
@@ -217,16 +217,16 @@ export const SERVICES = [
     ]
   },
 
-  // --- CATEGORY C: CORPORATE SUPPORT STAFF ---
+  // --- CATEGORY C: CORPORATE SUPPORT STAFF & PLACEMENT CONSULTANCY ---
   {
     id: "corporate-staffing-support",
     slug: "corporate-staffing-support",
-    title: "Corporate Support Staffing",
+    title: "Placement Consultancy & Corporate Staffing",
     category: "staffing",
-    categoryName: "Corporate Support Staff",
-    tagline: "Corporate Support Staff Provide – Accountant, Data Entry Operators, Electrician, Plumbers, Janitors, Pantry Boys.",
-    shortDescription: "Corporate Support Staff Provide – Accountant, Data Entry Operators, Electrician, Plumbers, Janitors, Pantry Boys.",
-    longDescription: "Kailaash Enterprises delivers dependable corporate workforce staffing for offices, IT parks, commercial establishments, and institutions in Pune. We provide verified, trained, and disciplined personnel including Accountants, Data Entry Operators, Electricians, Plumbers, Janitors, and Pantry Boys on flexible monthly contract models.",
+    categoryName: "Placement & Corporate Staffing",
+    tagline: "Placement Consultancy for Corporates – IT, Mechanical, Civil & Electrical Engineers, Banking, Finance, HR & Admin Staff.",
+    shortDescription: "Corporate placement consultancy & verified staffing: IT & IT Engineers, Mechanical, Civil, Electrical Engineers, Finance/Accounting, Banking, HR, Admin, and Support Staff.",
+    longDescription: "Kailaash Enterprises delivers trusted Placement Consultancy and Corporate Staffing services across Pune and India. We cater to IT enterprises, manufacturing units, engineering firms, banks, corporate offices, and commercial institutions. We source, evaluate, and provide certified professionals across technical engineering fields (IT, IT Engineers, Mechanical, Civil, Electrical), BFSI (Banking, Finance, Accounting), Management (HR, Admin, Back Office Staff), as well as vetted office support crews on flexible permanent, contract-to-hire, and monthly payroll models.",
     icon: "Users",
     featured: true,
     heroImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
@@ -234,18 +234,34 @@ export const SERVICES = [
       "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80"
     ],
+    placementFields: [
+      { name: "IT", selected: true, badge: "Popular" },
+      { name: "IT Engineer", selected: true, badge: "High Demand" },
+      { name: "Mechanical engineer", selected: true, badge: "Engineering" },
+      { name: "Civil Engineer", selected: true, badge: "Engineering" },
+      { name: "Electrical Engineer", selected: true, badge: "Engineering" },
+      { name: "Finance/Accounting", selected: true, badge: "BFSI" },
+      { name: "Banking", selected: true, badge: "BFSI" },
+      { name: "HR", selected: true, badge: "Management" },
+      { name: "Admin/back office staff", selected: true, badge: "Operations" },
+      { name: "Data Entry Operators", selected: true, badge: "Support" },
+      { name: "Technicians & Electricians", selected: true, badge: "Technical" },
+      { name: "Facility & Pantry Staff", selected: true, badge: "Hospitality" }
+    ],
     features: [
-      "Accountant & Junior Billing Personnel",
-      "Data Entry Operators & Office Coordinators",
-      "Licensed Electricians & Master Plumbers",
-      "Janitors & Commercial Housekeeping",
-      "Pantry Boys & Office Hospitality Staff"
+      "IT & IT Engineers (Software Developers, Infrastructure, Network & Cloud)",
+      "Core Engineering Recruitment (Mechanical, Civil & Electrical Engineers)",
+      "Finance, Accounting & Banking Professionals (Tally, GST, Billing & Cash Management)",
+      "Human Resources (HR) & Talent Acquisition Specialists",
+      "Admin, Executive Assistants & Back Office Operations Coordinators",
+      "Corporate Support Crew (Data Entry, Facility Technicians, Janitors & Pantry Boys)"
     ],
     inclusions: [
-      "Background-verified & police-verified candidates",
-      "Statutory compliance and punctual payroll management",
-      "Immediate replacement guarantee on absenteeism",
-      "Dedicated account manager for corporate clients"
+      "Rigorous candidate screening, technical interview & skill assessment",
+      "End-to-end background verification (BGV), credentials & police check",
+      "Flexible models: Permanent recruitment, contract staffing & monthly payroll",
+      "Prompt replacement guarantee on corporate contracts",
+      "Dedicated corporate staffing advisor & regulatory compliance management"
     ]
   },
 

@@ -66,23 +66,23 @@ export default function ServicesPreview() {
                     <div className="w-8 h-8 rounded-xl bg-[#32105F]/10 text-[#32105F] flex items-center justify-center shrink-0 group-hover:bg-[#32105F] group-hover:text-white transition-colors duration-300">
                       <Icon name={service.icon} className="w-4 h-4" />
                     </div>
-                    <h3 className="text-base sm:text-lg font-extrabold text-[#16131B] group-hover:text-[#32105F] transition-colors leading-snug">
-                      <Link to={`/services/${service.slug}`}>
+                    <h3 className="text-base sm:text-lg font-black text-black group-hover:text-[#32105F] transition-colors leading-snug">
+                      <Link to={`/services/${service.slug}`} className="text-black hover:text-[#32105F]">
                         {service.title}
                       </Link>
                     </h3>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-[#16131B] leading-relaxed mb-3">
+                  <p className="text-xs sm:text-sm text-black font-medium leading-relaxed mb-3">
                     {service.shortDescription}
                   </p>
 
                   {/* Bullet Highlights */}
-                  <ul className="space-y-1 text-xs text-[#16131B] font-medium border-t border-[#E8E2EE] pt-3">
+                  <ul className="space-y-1.5 text-xs text-black font-medium border-t border-[#E8E2EE] pt-3">
                     {service.features.slice(0, 3).map((feat, idx) => (
-                      <li key={idx} className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#D7A72E]"></span>
-                        <span className="truncate">{feat}</span>
+                      <li key={idx} className="flex items-center gap-2 text-black">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#D7A72E] shrink-0"></span>
+                        <span className="truncate text-black font-medium">{feat}</span>
                       </li>
                     ))}
                   </ul>

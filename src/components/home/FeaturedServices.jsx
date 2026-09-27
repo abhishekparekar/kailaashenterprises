@@ -37,17 +37,17 @@ export default function FeaturedServices() {
       reversed: true,
     },
     {
-      badge: "Commercial Solutions",
-      title: "Corporate Support Staff Provide.",
-      subtitle: "Corporate Support Staff Provide – Accountant, Data Entry Operators, Electrician, Plumbers, Janitors, Pantry Boys.",
+      badge: "Placement & Staffing",
+      title: "Placement Consultancy for Corporates",
+      subtitle: "Verified talent acquisition & staffing: IT, IT Engineers, Mechanical, Civil & Electrical Engineers, Banking, Finance, HR & Admin Staff.",
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80",
       bullets: [
-        "Accountant & Data Entry Operators for office operations",
-        "Licensed Electricians & Master Plumbers for technical maintenance",
-        "Police-verified Janitors, Housekeeping & Pantry Boys"
+        "IT & IT Engineers (Software, Systems, Network & Tech Professionals)",
+        "Core Engineers: Mechanical, Civil, and Electrical Engineers",
+        "Finance, Banking, HR, Admin & Verified Office Support Staff"
       ],
       link: "/services/corporate-staffing-support",
-      serviceName: "Corporate Support Staffing",
+      serviceName: "Placement & Corporate Staffing",
       reversed: false,
     }
   ];

@@ -48,10 +48,10 @@ export default function About() {
                   <strong>Kailash Enterprises began in 2017</strong> and our single-minded promise is to ensure that we develop and strengthen relationships with clients and partners by delivering state-of-the-art services through our unique expertise.
                 </p>
                 <p>
-                  We have grown on a strong foundation of trust and values to rise as one of the leading <strong>Corporate Support Staffing</strong> and turnkey interior execution services across India. We cater to clients within a diverse range of sectors and offer our unique expertise to build and provide personalized and superior quality solutions.
+                  We have grown on a strong foundation of trust and values to rise as one of the leading <strong>Placement Consultancy & Corporate Staffing</strong> and turnkey interior execution services across India. We cater to clients within a diverse range of sectors and offer our unique expertise to build and provide personalized and superior quality solutions.
                 </p>
                 <p>
-                  Kailash Enterprises takes pride in providing our clients with solutions that are executed with <strong>precision and care</strong> — whether it is specialized corporate support staffing, master carpentry and custom interior fabrication, or comprehensive maintenance.
+                  Kailash Enterprises takes pride in providing our clients with solutions that are executed with <strong>precision and care</strong> — whether it is specialized placement consultancy & corporate staffing (IT, Core Engineering, BFSI, HR, Admin), master carpentry and custom interior fabrication, or comprehensive maintenance.
                 </p>
               </div>
 
@@ -163,7 +163,7 @@ export default function About() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                     <span className="absolute bottom-1.5 left-2 text-[10px] sm:text-xs font-extrabold text-white">
-                      Corporate Staffing
+                      Placement & Staffing
                     </span>
                   </div>
 
@@ -217,7 +217,7 @@ export default function About() {
               </div>
               <h3 className="text-base font-extrabold text-[#16131B] mb-1.5">Diverse Sectors</h3>
               <p className="text-xs sm:text-sm text-[#16131B] leading-relaxed">
-                Corporate support staffing and turnkey interior solutions serving corporate, retail, IT, and residential clients.
+                Placement consultancy, corporate staffing, and turnkey interior solutions serving corporate, retail, IT, engineering, and residential clients.
               </p>
             </div>
 

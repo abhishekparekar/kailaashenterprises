@@ -49,7 +49,7 @@ export default function AboutPreview() {
             </h2>
 
             <p className="text-xs sm:text-sm md:text-base text-[#16131B] leading-relaxed">
-              Founded in 2017, Kailash Enterprises has grown on a solid foundation of trust and values into a premier provider of <strong>Corporate Support Staffing</strong>, custom interior woodwork, painting, and technical support across diverse commercial and residential sectors.
+              Founded in 2017, Kailash Enterprises has grown on a solid foundation of trust and values into a premier provider of <strong>Placement Consultancy & Corporate Staffing</strong>, custom interior woodwork, painting, and technical support across diverse commercial and residential sectors.
             </p>
 
             <p className="text-xs sm:text-sm md:text-base text-[#16131B] leading-relaxed">
@@ -71,7 +71,7 @@ export default function AboutPreview() {
                   <Icon name="Layers" className="w-4 h-4" />
                 </div>
                 <div className="text-xs sm:text-sm font-extrabold text-[#16131B]">One-Stop Hub</div>
-                <div className="text-[11px] text-[#16131B] font-medium mt-0.5">Interiors, painting, & corporate staffing.</div>
+                <div className="text-[11px] text-[#16131B] font-medium mt-0.5">Interiors, painting, & placement staffing.</div>
               </div>
 
               <div className="p-3.5 rounded-2xl bg-white border border-[#E8E2EE]">

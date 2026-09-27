@@ -71,7 +71,7 @@ export default function Footer() {
                   <Link to="/services/painting-services" className="hover:text-white hover:underline transition-colors">Painting & Finishes</Link>
                 </li>
                 <li>
-                  <Link to="/services/corporate-staffing-support" className="hover:text-white hover:underline transition-colors">Corporate Staffing</Link>
+                  <Link to="/services/corporate-staffing-support" className="hover:text-white hover:underline transition-colors">Placement & Staffing</Link>
                 </li>
                 <li>
                   <Link to="/services" className="text-[#D7A72E] font-bold inline-block hover:underline pt-1">

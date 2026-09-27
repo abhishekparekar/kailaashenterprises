@@ -9,7 +9,7 @@ export default function AboutPreview() {
     <section className="py-10 sm:py-16 md:py-20 bg-[#FAF8F3]" id="about">
       <Container size="large">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
+
           {/* Left Visual */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-sm sm:max-w-md lg:max-w-none">
@@ -49,7 +49,7 @@ export default function AboutPreview() {
             </h2>
 
             <p className="text-xs sm:text-sm md:text-base text-[#16131B] leading-relaxed">
-              Founded in 2017, Kailash Enterprises has grown on a solid foundation of trust and values into a premier provider of <strong>Placement Consultancy & Corporate Staffing</strong>, custom interior woodwork, painting, and technical support across diverse commercial and residential sectors.
+              Founded in 2017, Kailash Enterprises has grown on a solid foundation of trust and values into a premier provider of <strong>Placement consultancy for Corporates</strong>, custom interior woodwork, painting, and technical support across diverse commercial and residential sectors.
             </p>
 
             <p className="text-xs sm:text-sm md:text-base text-[#16131B] leading-relaxed">

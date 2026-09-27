@@ -30,7 +30,7 @@ export default function About() {
       <section className="py-10 sm:py-16 md:py-20 bg-white">
         <Container size="large">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
+
             {/* Story Content */}
             <div className="lg:col-span-7 space-y-4 sm:space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#32105F]/5 text-[#32105F] text-xs font-extrabold uppercase tracking-wider">
@@ -48,10 +48,10 @@ export default function About() {
                   <strong>Kailash Enterprises began in 2017</strong> and our single-minded promise is to ensure that we develop and strengthen relationships with clients and partners by delivering state-of-the-art services through our unique expertise.
                 </p>
                 <p>
-                  We have grown on a strong foundation of trust and values to rise as one of the leading <strong>Placement Consultancy & Corporate Staffing</strong> and turnkey interior execution services across India. We cater to clients within a diverse range of sectors and offer our unique expertise to build and provide personalized and superior quality solutions.
+                  We have grown on a strong foundation of trust and values to rise as one of the leading <strong>Placement consultancy for Corporates</strong> and turnkey interior execution services across India. We cater to clients within a diverse range of sectors and offer our unique expertise to build and provide personalized and superior quality solutions.
                 </p>
                 <p>
-                  Kailash Enterprises takes pride in providing our clients with solutions that are executed with <strong>precision and care</strong> — whether it is specialized placement consultancy & corporate staffing (IT, Core Engineering, BFSI, HR, Admin), master carpentry and custom interior fabrication, or comprehensive maintenance.
+                  Kailash Enterprises takes pride in providing our clients with solutions that are executed with <strong>precision and care</strong> — whether it is specialized Placement consultancy for Corporates (IT, Core Engineering, BFSI, HR, Admin), master carpentry and custom interior fabrication, or comprehensive maintenance.
                 </p>
               </div>
 
@@ -89,18 +89,18 @@ export default function About() {
               </div>
 
               <div className="pt-2 flex flex-wrap gap-3">
-                <Button 
-                  href={getWhatsAppUrl("Hello Kailash Enterprises, I would like to consult about your services.")} 
-                  variant="whatsapp" 
-                  size="md" 
+                <Button
+                  href={getWhatsAppUrl("Hello Kailash Enterprises, I would like to consult about your services.")}
+                  variant="whatsapp"
+                  size="md"
                   icon="MessageSquare"
                 >
                   WhatsApp Consultation
                 </Button>
-                <Button 
-                  href={`tel:${COMPANY.phoneRaw}`} 
-                  variant="secondary" 
-                  size="md" 
+                <Button
+                  href={`tel:${COMPANY.phoneRaw}`}
+                  variant="secondary"
+                  size="md"
                   icon="PhoneCall"
                 >
                   Call {COMPANY.phoneDisplay}
@@ -111,10 +111,10 @@ export default function About() {
             {/* Story Visual: All Services Combo Collage */}
             <div className="lg:col-span-5 mt-4 lg:mt-0">
               <div className="bg-[#FAF8F3] p-3 sm:p-4 rounded-3xl border border-[#E8E2EE] shadow-lg max-w-sm sm:max-w-md mx-auto space-y-3">
-                
+
                 {/* 2x2 Services Combo Collage Grid */}
                 <div className="grid grid-cols-2 gap-2 sm:gap-2.5">
-                  
+
                   {/* Tile 1: Modular Kitchens */}
                   <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group shadow-xs">
                     <img

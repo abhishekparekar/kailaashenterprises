@@ -221,7 +221,7 @@ export const SERVICES = [
   {
     id: "corporate-staffing-support",
     slug: "corporate-staffing-support",
-    title: "Placement Consultancy & Corporate Staffing",
+    title: "Placement consultancy for Corporates",
     category: "staffing",
     categoryName: "Placement & Corporate Staffing",
     tagline: "Placement Consultancy for Corporates – IT, Mechanical, Civil & Electrical Engineers, Banking, Finance, HR & Admin Staff.",
